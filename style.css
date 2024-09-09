@@ -45,7 +45,17 @@
 .cwhite { color: aliceblue; }
 
 .bg-gray { background-color: rgb(247, 250, 252);}
-.bg-white { background-color: white;}
+.bg-white { background-color: white; }
+
+.d-flex { display: flex; }
+.align-center { align-items: center; }
+.fd-columns { flex-direction: column; }
+.fd-rows { flex-direction: row; }
+.fd-row-reversed { flex-direction: row-reverse; }
+.wrap { flex-wrap: wrap; }
+
+.w-50 {width: 50%;}
+.w-100 {width: 100%;}
 
 * {
     font-family: "Open Sans", sans-serif;
@@ -58,11 +68,9 @@ body {
     margin: 0;
 }
 
-
 .header {
     display: flex;
     padding: 0.8rem 0;
-    align-items: center;
     justify-content: space-around;
 }
 
@@ -108,8 +116,18 @@ body {
 /* Остальные блоки */
 .block {
     padding: 3rem 0;
+    max-width: 530px;
     display: flex;
-    flex-direction: column;
     align-items: center;
+}
+
+.feature-img {
+    max-height: 250px;
+}
+
+@media (max-width: 576px) {
+    .w-full-576 {
+        width: 100%;
+    }
 }
 
